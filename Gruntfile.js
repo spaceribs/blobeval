@@ -81,8 +81,8 @@ module.exports = function(grunt) {
 				},
 				build: {
 					files:  {},
-					src:    'lt.js',
-					dest:   'lt.min.js'
+					src:    'blobeval.js',
+					dest:   'blobeval.min.js'
 				}
 			}/*,
 			karma: {

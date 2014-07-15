@@ -1,3 +1,8 @@
-<div ng-controller='HomeCtrl'>	
-	<!-- TODO: place directive call here -->
+<div ng-controller='HomeCtrl'>
+    <label>
+        Allowed Evaluation Time in milliseconds (set to 0 if you want this disabled): <input ng-model="blobEvalOptions.timeout" type="number" />
+    </label>
+    <div ui-jq="terminal" ui-options="terminalCallback, terminalOptions"></div>
+    <h2>Variables editable via 'this':</h2>
+    <pre>{{ person | json }}</pre>
 </div>
