@@ -1,10 +1,10 @@
 {
-  "name": "Blobeval-demo",
-  "version": "0.0.0",
+  "name": "blobeval",
+  "version": "0.0.1",
   "authors": [
     "spaceribs@gmail.com"
   ],
-  "description": "Demo",
+  "description": "Run client created javascript in a safe environment.",
   "keywords": [],
   "main": [
     "./blobeval.js"
