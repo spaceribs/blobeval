@@ -1,9 +1,9 @@
 {
-	"author": "",
-	"name": "Blobeval-demo",
-	"version": "0.0.0",
-	"description": "",
-	"homepage": "",
+	"author": "spaceribs",
+	"name": "blobeval",
+	"version": "0.0.1",
+	"description": "Run client created javascript in a safe environment.",
+	"homepage": "https://github.com/spaceribs/blobeval",
 	"dependencies": {
 	},
 	"devDependencies": {

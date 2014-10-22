@@ -18,13 +18,14 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.2.0",
-    "angular-sanitize": "~1.2.0",
-    "angular-route": "~1.2.0",
-    "angular-touch": "~1.2.0",
-    "jquery.terminal": "~0.8.8",
-    "angular-ui-utils": "~0.1.1",
-    "jquery": "~2.1.1"
+    "angular": "~1.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+      "angular-sanitize": "~1.2.0",
+      "angular-route": "~1.2.0",
+      "angular-touch": "~1.2.0",
+      "jquery.terminal": "~0.8.8",
+      "angular-ui-utils": "~0.1.1",
+      "jquery": "~2.1.1"
+  }
 }
