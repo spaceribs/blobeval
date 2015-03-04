@@ -39,7 +39,7 @@ Blobeval.evaluate(func, onsuccess, onerror, data, options);
 | **func**      | *string or function* | A string or function that is to be evaluated, examples are `"return 1+1;"` or `function(){ return 1+1; }`.                                                                  |
 | **onsuccess** | *function*           | Callback for successful evaluation, passes in an object containing the return statement as `message` and the transformed data as `scope`.                                   |
 | **onerror**   | *function*           | returns a standard `Error` object.                                                                                                                                          |
-| **scope**     | *object*             | Data to be made available to the function wrapped in an object. This data can be accessed/edited by the function using `scope.someData` and is returned with the message on success. |
+| **scope**     | *object*             | Data to be made available to the function when it's called. This data can be accessed/edited by the function using `this.scope.someData` and is returned with the message on success. |
 | **options**   | *object*             | Additional configuration options described below                                                                                                                            |
 
 ### Additional Options
