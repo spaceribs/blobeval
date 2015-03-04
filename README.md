@@ -3,7 +3,7 @@
 An asyncronous, blobworker based, (mostly) safe evaluator and sandbox for untrusted javascript. Some highlights of the system include:
 
 * A customizable blacklist system for possibly unsafe functions.
-* An AngularJS service.
+* An optional AngularJS service.
 * External library importer, for including helpers like Underscore.
 * Custom context, which sets `this` for the function being evaluated.
 * Customizable timeout period for evaluation, which prevents infinite looping.
