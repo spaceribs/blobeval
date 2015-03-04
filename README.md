@@ -1,4 +1,4 @@
-## Blobeval
+## BlobEval
 
 An asyncronous, blobworker based, (mostly) safe evaluator and sandbox for untrusted javascript. Some highlights of the system include:
 
