@@ -1,7 +1,7 @@
 {
 	"author": "spaceribs",
 	"name": "blobeval",
-	"version": "0.0.1",
+	"version": "0.0.5",
 	"description": "Run client created javascript in a safe environment.",
 	"homepage": "https://github.com/spaceribs/blobeval",
 	"dependencies": {
