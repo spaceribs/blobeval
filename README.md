@@ -17,7 +17,16 @@ The main goal is to allow end users to share content that is submitted as javasc
 1. Install the bower dependency in your project using `bower install blobeval`, this will grab the library and the angular service.
 2. Add the script tag to your HTML, the global `Blobeval` should be available in your console.
 
-## Evaluate
+## How BlobEval works
+
+1. It creates a BlobWorker, a subset of WebWorkers which does not require an external script to be called or loaded and is passed as a string. The script that is generated includes libraries set in the options of the evaluation, as well as a blacklist of native functions that we want to restrict the script from accessing.
+2. The function passed is recreated by converting it into a string, then uses a function constructor to evaluate and sandbox the execution even futher, preventing the script from running it's own postMessage out from the BlobWorker.
+3. From this fake file, it creates the worker and starts a timer on the evaluation, if the script takes too long or is in an infinite loop, the worker is terminated after the timeout ends.
+4. The data is passed as a parameter to the function for evaluation, only valid JSON (no functions) are allowed to be passed to the worker.
+5. Once the script runs, it returns with the transformed data and whatever is passed in the `return`.
+6. No matter what, the BlobWorker is only run once and is immediately destroyed after evaluation.
+
+## Evaluation
 
 the global `Blobeval.evaluate` can be run using these parameters:
 
